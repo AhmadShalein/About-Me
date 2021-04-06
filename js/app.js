@@ -1,5 +1,9 @@
 "use strict";
 
+let userName = prompt('What\'s your name?');
+console.log(userName)
+alert('Welcome to my website ' + userName);
+
 let myName = prompt('Do you think my first name is Ahmad?'); 
 myName = myName.toLowerCase();
 switch(myName){
@@ -112,6 +116,5 @@ if (marriage === 'yes' || marriage === 'y'){
 
 alert(' My first name is Ahmad ,' + ' I have a twin ,' + ' I come from Jordan ,' + ' My major is Electrical Engineering ,' + ' I am single ');
 
-let userName = prompt('What\'s your name?');
 console.log(userName)
 alert('Welcome to my website ' + userName);
