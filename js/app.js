@@ -6,7 +6,7 @@ alert('Welcome to my website ' + userName);
 
 let score = 0;
 
-// Guess Question 1
+// Guess Question 1:
 
 let myName = prompt('Do you think my first name is Ahmad?'); 
 myName = myName.toLowerCase();
@@ -31,32 +31,32 @@ if (myName === 'yes' || myName === 'y'){
     console.log('False Answer');
 }
 
-// Guess Question 2
+// Guess Question 2:
 
 let twin = prompt('Am I have a twin?'); 
 twin = twin.toLowerCase();
 switch(twin){
 case 'yes':
 case 'y':
-console.log('you\'re correct')
-alert('you\'re correct, I have a twin correct');
-score++;
+console.log('you\'re wrong')
+alert('you\'re wrong');
 break;
 case 'no':
 case 'n':
-console.log('you\'re wrong')
-alert('you\'re wrong');
+console.log('you\'re correct')
+alert('you\'re correct, I don\'t have a twin correct');
+score++;
 break;
 default:
 alert('Please guess the answer');
 }
 if (twin === 'yes' || twin === 'y'){
-    console.log('True Answer');
-} else {
     console.log('False Answer');
+} else {
+    console.log('True Answer');
 }
 
-// Guess Question 3
+// Guess Question 3:
 
 let country = prompt('Do you think that I come from Jordan?');
 country = country.toLowerCase();
@@ -81,7 +81,7 @@ if (country === 'yes' || country === 'y'){
     console.log('False Answer');
 }
 
-// Guess Question 4
+// Guess Question 4:
 
 let major = prompt('Do you think my major is Electrical Engineering?');
 major = major.toLowerCase();
@@ -106,7 +106,7 @@ if (major === 'yes' || major === 'y'){
     console.log('False Answer');
 }
 
-// Guess Question 5
+// Guess Question 5:
 
 let marriage = prompt('Do you think I am married?');
 marriage = marriage.toLowerCase();
@@ -136,7 +136,7 @@ alert(' My first name is Ahmad ,' + ' I have a twin ,' + ' I come from Jordan ,'
 console.log(userName)
 alert('Welcome to my website ' + userName);
 
-// Guess Question 6
+// Guess Question 6:
 
 
 for(let i = 0 ; i < 4 ; i++) {
@@ -157,22 +157,25 @@ for(let i = 0 ; i < 4 ; i++) {
 }
     alert('My favorite number is 7!');
 
-// Guess Question 7
+// Guess Question 7:
 
 
-    for (let j = 0; j < 6 ; j++){
+let favColour = ['red','orange','yellow','green','blue','violet'];
 
-       let favColor = ['red','orange','yellow','green','blue','violet']
-       let userAnswer = prompt('Can you guess my favorite color?').toLowerCase();
-       
-    
-           if (userAnswer === favColor[j]) {
-           alert ('Congrats you got it right!');
-           score++;
+for (let i = 0; i < 6; i++) {
+    let userAnswer = prompt('Can you guess my favorite colour?').toLowerCase();
 
-    }      else if ((userAnswer !== favColor[j])){
-           alert('Sorry wrong answer, try again!');}
+    for (var j = 0; j < favColour.length; j++){
+        if (userAnswer === favColour[j]) {
+            alert('Congrats you got it right!');
+            score++;
+            i = 6;
+            break;
+        }
     }
-           
-    alert('My favorite colors are: Red, Orange, Yellow, Green, Blue and Violet!')
-    alert('Good Job!... You got ' + score + ' correct answers!');
+    if (i !== 6){
+        alert('Sorry wrong answer, try again');
+    }
+}
+        alert('My favorite colors are: Red, Orange, Yellow, Green, Blue and Violet!');
+        alert('Good Job!... You got ' + score + ' correct answers!');
