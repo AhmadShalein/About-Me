@@ -1,25 +1,33 @@
-body{
-    background-color: #5f939a;
-    margin: 0%;
+h1 {
+    padding: 6px;
+    color:navy;
+    font-style: normal;
+    font-size: xx-large;
+    border: 1px solid navy;
+    text-align: center;
+    margin: 10px;
+    font-family: 'Tangerine';
 }
-header {
-    background-color: #d8ac9c;
-    color: rgba(245, 238, 238, 0.917);
-    height: 100px;
+
+#p1 {
+    padding: 10px;
+    margin: 1px;
 }
-header nav{ 
-    float: right;
-    width: 25%;
-    margin-top: 30px;
+
+body {
+    background-color: beige;
 }
-header h1 { 
-    float: left;
-    margin: 30px 0 0 3%;
+
+#p2 {
+    padding: 10px;
+    margin: 1px;
+    font-family: 'Tangerine ';
+    color : navy;
 }
-footer{
-    height: 80px;
-    background-color: darkslategray;
-    color: whitesmoke;
+
+ol {
+    padding: 0px 0px 0px 30px;
+    list-style-type: decimal;
 }
 
 footer p{
