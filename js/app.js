@@ -6,8 +6,8 @@ alert('Welcome to my website ' + userName);
 
 let score = 0;
 
-// Guess Question 1:
-function question1(){
+// Guess QuestionOne:
+function questionOne(){
   let myName = prompt('Do you think my first name is Ahmad?');
   myName = myName.toLowerCase();
   switch(myName){
@@ -31,9 +31,9 @@ function question1(){
     console.log('False Answer');
   }
 }
-question1();
-// Guess Question 2:
-function question2(){
+questionOne();
+// Guess QuestionTwo:
+function questionTwo(){
   let twin = prompt('Am I have a twin?');
   twin = twin.toLowerCase();
   switch(twin){
@@ -57,9 +57,9 @@ function question2(){
     console.log('True Answer');
   }
 }
-question2();
-// Guess Question 3:
-function question3(){
+questionTwo();
+// Guess QuestionThree:
+function questionThree(){
   let country = prompt('Do you think that I come from Jordan?');
   country = country.toLowerCase();
   switch(country){
@@ -83,10 +83,10 @@ function question3(){
     console.log('False Answer');
   }
 }
-question3();
+questionThree();
 
-// Guess Question 4:
-function question4() {
+// Guess QuestionFour:
+function questionFour() {
   let major = prompt('Do you think my major is Electrical Engineering?');
   major = major.toLowerCase();
   switch(major){
@@ -110,10 +110,10 @@ function question4() {
     console.log('False Answer');
   }
 }
-question4();
+questionFour();
 
-// Guess Question 5:
-function question5(){
+// Guess QuestionFive:
+function questionFive(){
   let marriage = prompt('Do you think I am married?');
   marriage = marriage.toLowerCase();
   switch(marriage){
@@ -142,10 +142,10 @@ function question5(){
   console.log(userName);
   alert('Welcome to my website ' + userName);
 }
-question5();
-// Guess Question 6:
+questionFive();
+// Guess QuestionSix:
 
-function question6(){
+function questionSix(){
   for(let i = 0 ; i < 4 ; i++){
     let guessNumber = prompt('Guess my favourite number from 1 till 10!');
     guessNumber = parseInt(guessNumber);
@@ -163,12 +163,12 @@ function question6(){
   }
   alert('My favorite number is 7!');
 }
-question6();
+questionSix();
 
 
-// Guess Question 7:
+// Guess QuestionSeven:
 
-function question7(){
+function questionSeven(){
   let favColour = ['red','orange','yellow','green','blue','violet'];
 
   for (let i = 0; i < 6; i++) {
@@ -188,5 +188,5 @@ function question7(){
   }
   alert('My favorite colors are: Red, Orange, Yellow, Green, Blue and Violet!');
 }
-question7();
+questionSeven();
 alert('Good Job!... You got ' + score + ' correct answers!');
